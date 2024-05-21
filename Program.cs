@@ -26,3 +26,56 @@ while (number != 0)
 }
 
 Console.Write(inv);
+
+int opcion;
+double numA = 0;
+double numB = 0;
+
+do
+{
+    Console.WriteLine("Calculadora\n");
+    Console.WriteLine("1- Sumar\n");
+    Console.WriteLine("2- Restar\n");
+    Console.WriteLine("3- Multiplicar\n");
+    Console.WriteLine("4- Dividir\n");
+    Console.WriteLine("0- Salir\n");
+    opcion = Convert.ToInt32(Console.ReadLine());
+
+    switch (opcion)
+    {
+        case 1:
+            Console.WriteLine("Ingrese el numero 1: ");
+            numA = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Ingrese el numero 2: ");
+            numB = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"El resultado es: {numA + numB}\n");
+            break;
+        case 2:
+            Console.WriteLine("Ingrese el numero 1: ");
+            numA = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Ingrese el numero 2: ");
+            numB = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"El resultado es: {numA - numB}\n");
+            break;
+        case 3:
+            Console.WriteLine("Ingrese el numero 1: ");
+            numA = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Ingrese el numero 2: ");
+            numB = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"El resultado es: {numA * numB}\n");
+            break;
+        case 4:
+            Console.WriteLine("Ingrese el numero 1: ");
+            numA = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Ingrese el numero 2: ");
+            numB = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"El resultado es: {numA / numB}\n");
+            break;
+        case 0:
+            Console.WriteLine("Saliendo del programa...\n");
+            break;
+        default:
+            Console.WriteLine("Opcion invalida!\n");
+            break;
+    }
+} while (opcion != 0);
