@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
-
+/* 
 int a;
 
 int b;
@@ -78,4 +78,19 @@ do
             Console.WriteLine("Opcion invalida!\n");
             break;
     }
-} while (opcion != 0);
+} while (opcion != 0); */
+
+Console.WriteLine("Ingresa una cadena: ");
+string text = Console.ReadLine();
+int lon = text.Count();
+Console.WriteLine($"La cadena {text} tiene {lon} letras");
+Console.WriteLine("Ingresa una cadena: ");
+string text2 = Console.ReadLine();
+string concatText = String.Concat(text, " ", text2);
+Console.WriteLine($"concat: {concatText}");
+Console.Write("Ingrese el índice de inicio para la subcadena: ");
+int indiceInicio = Convert.ToInt32(Console.ReadLine());
+Console.Write("Ingrese la longitud de la subcadena: ");
+int longitudSubcadena = Convert.ToInt32(Console.ReadLine());
+string subcadena = text.Substring(indiceInicio, longitudSubcadena);
+Console.WriteLine($"La subcadena extraída es: {subcadena}");
