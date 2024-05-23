@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
-/* 
-int a;
+
+/* int a;
 
 int b;
 
@@ -48,28 +48,28 @@ do
             numA = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Ingrese el numero 2: ");
             numB = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine($"El resultado es: {numA + numB}\n");
+            Console.WriteLine($"La suma {numA} y de {numB} es igual a: {numA + numB}\n");
             break;
         case 2:
             Console.WriteLine("Ingrese el numero 1: ");
             numA = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Ingrese el numero 2: ");
             numB = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine($"El resultado es: {numA - numB}\n");
+            Console.WriteLine($"La resta {numA} y de {numB} es igual a: {numA - numB}\n");
             break;
         case 3:
             Console.WriteLine("Ingrese el numero 1: ");
             numA = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Ingrese el numero 2: ");
             numB = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine($"El resultado es: {numA * numB}\n");
+            Console.WriteLine($"La multiplicacion {numA} y de {numB} es igual a: {numA * numB}\n");
             break;
         case 4:
             Console.WriteLine("Ingrese el numero 1: ");
             numA = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Ingrese el numero 2: ");
             numB = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine($"El resultado es: {numA / numB}\n");
+            Console.WriteLine($"La division {numA} y de {numB} es igual a: {numA / numB}\n");
             break;
         case 0:
             Console.WriteLine("Saliendo del programa...\n");
@@ -94,3 +94,36 @@ Console.Write("Ingrese la longitud de la subcadena: ");
 int longitudSubcadena = Convert.ToInt32(Console.ReadLine());
 string subcadena = text.Substring(indiceInicio, longitudSubcadena);
 Console.WriteLine($"La subcadena extraída es: {subcadena}");
+
+Console.WriteLine("Elementos de cadena");
+foreach (char c in text)
+{
+    Console.WriteLine(c);
+}
+
+Console.WriteLine("Ingrese una palabra:");
+string palabra = Console.ReadLine();
+if (text.Contains(palabra))
+{
+    Console.WriteLine($"La palabra {palabra}, si se encuentra en la cadena.\n");
+}
+else
+{
+
+    Console.WriteLine($"La palabra {palabra}, no se encuentra en la cadena.\n");
+}
+
+string cadenaMayusculas = text.ToUpper();
+Console.WriteLine($"Cadena en mayúsculas: {cadenaMayusculas}");
+
+string cadenaMinusculas = text.ToLower();
+Console.WriteLine($"Cadena en minúsculas: {cadenaMinusculas}");
+
+Console.Write("Ingrese una cadena separada por comas: ");
+string cadenaSeparada = Console.ReadLine();
+string[] partes = cadenaSeparada.Split(',');
+Console.WriteLine("Partes de la cadena separada:");
+foreach (string parte in partes)
+{
+    Console.WriteLine(parte.Trim());
+}
