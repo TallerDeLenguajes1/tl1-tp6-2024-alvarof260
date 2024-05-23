@@ -14,7 +14,7 @@ Console.WriteLine("El valor de a: " + a);
 Console.WriteLine("El valor de b: " + b); */
 
 
-Console.WriteLine("Ingrese un numero:");
+/* Console.WriteLine("Ingrese un numero:");
 int number = Convert.ToInt32(Console.ReadLine());
 int inv = 0;
 
